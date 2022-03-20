@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Records</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<header>
+    <h1>Purchase Records</h1>
+</header>
+<br>
+<body>
+    <main> 
+        <form id="formDiscount">
+            <div>
+                <label for="inputEmail">Email: </label>
+                <input type="text" id="inputEmail" name="inputEmail" required>
+                <span class="req"></span>
+            </div>
+            <div>
+                <label for="purchaseDate">Date of Purchase: </label>
+                <input type="text" id="purchaseDate" name="purchaseDate" required>
+                <span class="req"></span>
+            </div>
+            <div>
+                <label for="discountType">Type Of Discount: </label>
+                <select id="discountType">
+                    <option value="0">None</option>
+                    <option value="1">Military</option>
+                    <option value="2">Student</option>
+                    <option value="3">AARP</option>
+                </select>
+                <span class="req"></span>
+            </div>
+            <div>
+                <label for="purchaseAmount">Purchase Amount: </label>
+                <input type="text" id="purchaseAmount" name="purchaseAmount" placeholder="22.22" required>
+                <span class="req"></span>
+            </div>
+            <div>
+                <input type="submit" value="Process Information" id="buttonSubmit">
+            </div>
+            <div>
+                <label for="discountedPrice">Discounted Price: </label>
+                <input type="text" id="discountedPrice" readonly>
+            </div>
+        </form>
+    </main>
+    <script src="js/Record.js"></script>
+</body>
+</html>
