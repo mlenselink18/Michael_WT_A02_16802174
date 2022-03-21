@@ -98,6 +98,7 @@ $(document).ready( () => {
         {
             $("#discountedPrice").val(calculateDiscount($("#purchaseAmount").val()));
         }
+        evt.preventDefault();
     });
 
     $("#discountType")
